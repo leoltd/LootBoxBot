@@ -30,8 +30,7 @@ client.on('message', async message => {
             let ran2 = Math.floor(Math.random()*3);
           // Проверка
             if(ran <= 7 && 0 <= ran){await message.channel.send({embed: {color: 15844367, description: "Legendary\n" + legend[ran2]}}); switch(ran2){
-                case 0: 
-                client.channels.cache.get(chan).send('King').catch(console.error); member.roles.add(King).catch(console.error); check = 1; break;
+                case 0: client.channels.cache.get(chan).send('King').catch(console.error); member.roles.add(King).catch(console.error); check = 1; break;
                 case 1: client.channels.cache.get(chan).send('Old').catch(console.error); member.roles.add(Old).catch(console.error); check = 1; break;
                 case 2: client.channels.cache.get(chan).send('5000 Coins').catch(console.error); check = 1; break;
               }
